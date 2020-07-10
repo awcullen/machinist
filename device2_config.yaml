@@ -1,0 +1,209 @@
+---
+name: Line2
+description: Building1
+endpointURL: opc.tcp://127.0.0.1:48010
+securityPolicy: http://opcfoundation.org/UA/SecurityPolicy#None
+publishInterval: 5000.0
+samplingInterval: 1000.0
+queueSize: 16
+metrics:
+  - metricID: 104adf16
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0000
+  - metricID: c0ab6f68
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0001
+  - metricID: 724a5614
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0002
+  - metricID: 32e6a68f
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0003
+  - metricID: 29dd9dd3
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0004
+  - metricID: 7bd4abe6
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0005
+  - metricID: 8e77a83c
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0006
+  - metricID: 43745d85
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0007
+  - metricID: 16f1f026
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0008
+  - metricID: 58d82b83
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0009
+  - metricID: d1888cac
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0010
+  - metricID: 5681d463
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0011
+  - metricID: 57b03cbe
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0012
+  - metricID: 5ed0014e
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0013
+  - metricID: 4bb7393f
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0014
+  - metricID: 7487e4de
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0015
+  - metricID: 38a9b5da
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0016
+  - metricID: 083e7efb
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0017
+  - metricID: 01b4a92e
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0018
+  - metricID: 472b2d8e
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0019
+  - metricID: 7aa7f90a
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0020
+  - metricID: 61535b1a
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0021
+  - metricID: 357d124b
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0022
+  - metricID: "88589e19"
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0023
+  - metricID: 790f15ba
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0024
+  - metricID: 0cc6c9b1
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0025
+  - metricID: 99f3528e
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0026
+  - metricID: 67f6eba9
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0027
+  - metricID: fcd163ce
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0028
+  - metricID: db25abe5
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0029
+  - metricID: 71e99f3c
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0030
+  - metricID: 982c661a
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0031
+  - metricID: 44cda9d7
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0032
+  - metricID: 36dee51c
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0033
+  - metricID: 5a5c709c
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0034
+  - metricID: 1d2d2823
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0035
+  - metricID: d4ab720a
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0036
+  - metricID: 5f114576
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0037
+  - metricID: c237b041
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0038
+  - metricID: 12e07f67
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0039
+  - metricID: 167c55a0
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0040
+  - metricID: ce6de02a
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0041
+  - metricID: 26b51746
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0042
+  - metricID: 29ada245
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0043
+  - metricID: ad9baec1
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0044
+  - metricID: f2a36e6b
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0045
+  - metricID: c454a18a
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0046
+  - metricID: e4feba9d
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0047
+  - metricID: a3a142bf
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0048
+  - metricID: 2934a291
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0049
+  - metricID: 83bb5ae0
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0050
+  - metricID: 2bd882ba
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0051
+  - metricID: "94802667"
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0052
+  - metricID: 94458ad9
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0053
+  - metricID: 30dac08d
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0054
+  - metricID: 4602d572
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0055
+  - metricID: 681bc79e
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0056
+  - metricID: 5c3d8131
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0057
+  - metricID: 6d6fed7b
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0058
+  - metricID: 7d6bd4a2
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0059
+  - metricID: f0464245
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0060
+  - metricID: ad4d436f
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0061
+  - metricID: 7f11167a
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0062
+  - metricID: 179678d8
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0063
+  - metricID: 86201ff6
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0064
+  - metricID: 8081d552
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0065
+  - metricID: 46915ea5
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0066
+  - metricID: 597a178e
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0067
+  - metricID: 5b9fee42
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0068
+  - metricID: b33da3b2
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0069
+  - metricID: be260a7c
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0070
+  - metricID: 88a122ac
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0071
+  - metricID: 6a857306
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0072
+  - metricID: a285776a
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0073
+  - metricID: afb5fdbe
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0074
+  - metricID: a1fe8199
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0075
+  - metricID: a8a5079c
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0076
+  - metricID: 0bb4f2ce
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0077
+  - metricID: be37eb0d
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0078
+  - metricID: 9866f361
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0079
+  - metricID: 146a6c39
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0080
+  - metricID: 1745afd1
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0081
+  - metricID: 24f362c1
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0082
+  - metricID: 7f9e91bf
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0083
+  - metricID: 1521d067
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0084
+  - metricID: 9f35e3ff
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0085
+  - metricID: 206c2a14
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0086
+  - metricID: 576f6e6a
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0087
+  - metricID: 0029e2e2
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0088
+  - metricID: 636e5aa8
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0089
+  - metricID: 5d4be091
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0090
+  - metricID: 1fb4160c
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0091
+  - metricID: 5378e619
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0092
+  - metricID: 7ac87965
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0093
+  - metricID: d7ac3925
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0094
+  - metricID: e55bd7d8
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0095
+  - metricID: eabb0036
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0096
+  - metricID: f72dd5ad
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0097
+  - metricID: 9901a4c6
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0098
+  - metricID: e300221a
+    nodeID: ns=2;s=Demo.Massfolder_Dynamic.Variable0099

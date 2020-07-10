@@ -1,0 +1,53 @@
+syntax = "proto3";
+package opcua;
+option go_package = ".;opcua";
+import "google/protobuf/timestamp.proto";
+
+message Null {}
+message BooleanArray { repeated bool value = 1; }
+message Int32Array  { repeated sint32 value = 1; }
+message UInt32Array { repeated uint32 value = 1; }
+message Int64Array  { repeated sint64 value = 1; }
+message UInt64Array { repeated uint64 value = 1; }
+message FloatArray  { repeated float value = 1; }
+message DoubleArray { repeated double value = 1; }
+message StringArray { repeated string value = 1; }
+message TimestampArray { repeated google.protobuf.Timestamp  value = 1; }
+message BytesArray { repeated bytes value = 1; }
+
+// Variant message.
+message Variant {
+  oneof value {
+    Null Null = 127;
+    bool Boolean = 1;
+    sint32 SByte = 2;
+    uint32 Byte = 3;
+    sint32 Int16 = 4;
+    uint32 UInt16 = 5;
+    sint32 Int32 = 6;
+    uint32 UInt32 = 7;
+    sint64 Int64 = 8;
+    uint64 UInt64 = 9;
+    float Float = 10;
+    double Double = 11;
+    string String = 12;
+    google.protobuf.Timestamp DateTime = 13;
+    bytes Guid = 14;
+    bytes ByteString = 15;
+    BooleanArray BooleanArray = 51;
+    Int32Array SByteArray = 52;
+    UInt32Array ByteArray = 53;
+    Int32Array Int16Array = 54;
+    UInt32Array UInt16Array = 55;
+    Int32Array Int32Array = 56;
+    UInt32Array UInt32Array = 57;
+    Int64Array Int64Array = 58;
+    UInt64Array UInt64Array = 59;
+    FloatArray FloatArray = 60;
+    DoubleArray DoubleArray = 61;
+    StringArray StringArray = 62;
+    TimestampArray DateTimeArray = 63;
+    BytesArray GuidArray = 64;
+    BytesArray ByteStringArray = 65;
+  }
+}

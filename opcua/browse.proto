@@ -1,0 +1,95 @@
+syntax = "proto3";
+package opcua;
+option go_package = ".;opcua";
+
+// The Browse service definition.
+service BrowseService {
+  rpc Browse(BrowseRequest) returns (BrowseResponse) {}
+  rpc BrowseNext(BrowseNextRequest) returns (BrowseNextResponse) {}
+}
+
+enum BrowseDirectionEnum {
+  FORWARD = 0;
+  INVERSE = 1;
+  BOTH = 2;
+  INVALID = 3;
+}
+
+enum NodeClass {
+  UNSPECIFIED = 0;
+  OBJECT = 1;
+  VARIABLE = 2;
+  METHOD = 4;
+  OBJECT_TYPE = 8;
+  VARIABLE_TYPE = 16;
+  REFERENCE_TYPE = 32;
+  DATA_TYPE = 64;
+  VIEW = 128;
+}
+
+enum BrowseResultMask {
+  NONE = 0;
+  REFERENCE_TYPE_ID = 1;
+  IS_FORWARD = 2;
+  NODE_CLASS = 4;
+  BROWSE_NAME = 8;
+  DISPLAY_NAME = 16;
+  TYPE_DEFINITION = 32;
+  ALL = 63;
+  REFERENCE_TYPE_INFO = 3;
+  TARGET_INFO = 60;
+}
+
+// BrowseDescription message
+message BrowseDescription {
+  string nodeId = 1;
+  BrowseDirectionEnum browseDirection = 2;
+  string referenceTypeId = 3;
+  bool includeSubtypes = 4;
+  uint32 nodeClassMask = 5;
+  uint32 resultMask = 6;
+}
+
+// BrowseRequest message
+message BrowseRequest {
+  uint32 requestHandle = 1;
+  uint32 requestedMaxReferencesPerNode = 2;
+  repeated BrowseDescription nodesToBrowse = 3;
+}
+
+// ReferenceDescription message.
+message ReferenceDescription {
+  string referenceTypeId = 1;
+  bool isForward = 2;
+  string nodeId = 3;
+  string browseName = 4;
+  string displayName = 5;
+  uint32 nodeClass = 6;
+  string typeDefinition = 7;
+}
+
+// BrowseResult message.
+message BrowseResult {
+  uint32 statusCode = 1;
+  bytes continuationPoint = 2;
+  repeated ReferenceDescription references = 3;
+}
+
+// BrowseResponse message.
+message BrowseResponse {
+  uint32 requestHandle = 1;
+  uint32 statusCode = 2;
+  repeated BrowseResult results = 3;
+}
+
+message BrowseNextRequest {
+  uint32 requestHandle = 1;
+  bool releaseContinuationPoints = 2;
+  repeated bytes continuationPoints = 3;
+}
+
+message BrowseNextResponse {
+  uint32 requestHandle = 1;
+  uint32 statusCode = 2;
+  repeated BrowseResult results = 3;
+}

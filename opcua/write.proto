@@ -1,0 +1,30 @@
+syntax = "proto3";
+package opcua;
+option go_package = ".;opcua";
+import "opcua/variant.proto";
+
+// The Write service definition.
+service WriteService {
+	rpc Write(WriteRequest) returns (WriteResponse) {}
+}
+
+// WriteValue message.
+message WriteValue {
+  string nodeId = 1;
+  uint32 attributeId = 2;
+  string indexRange = 3;
+  Variant value = 4;
+}
+
+// WriteRequest message
+message WriteRequest {
+  uint32 requestHandle = 1;
+  repeated WriteValue nodesToWrite = 2;
+}
+
+// WriteResponse message.
+message WriteResponse {
+  uint32 requestHandle = 1;
+  uint32 statusCode = 2;
+  repeated uint32 results = 3;
+}

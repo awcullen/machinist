@@ -1,0 +1,16 @@
+---
+name: test-company
+location: New York, NY
+devices:
+  - kind: opcua
+    deviceID: device1
+    privateKey: |
+      -----BEGIN EC PRIVATE KEY-----
+      -----END EC PRIVATE KEY-----
+    algorithm: ES256
+  - kind: opcua
+    deviceID: device2
+    privateKey: |
+      -----BEGIN PRIVATE KEY-----
+      -----END PRIVATE KEY-----
+    algorithm: RS256

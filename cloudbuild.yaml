@@ -1,0 +1,16 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    entrypoint: /bin/bash
+    args:
+      - -c
+      - >
+        docker build
+        --build-arg TAG_NAME=${COMMIT_SHA}
+        --build-arg SHORT_SHA=${SHORT_SHA}
+        -t gcr.io/${PROJECT_ID}/${_NAME}:${COMMIT_SHA} .
+
+images:
+  - "gcr.io/${PROJECT_ID}/${_NAME}:${COMMIT_SHA}"
+
+substitutions:
+  _NAME: machinist

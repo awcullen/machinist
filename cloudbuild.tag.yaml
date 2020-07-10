@@ -1,0 +1,16 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    entrypoint: /bin/bash
+    args:
+      - -c
+      - >
+        docker build
+        --build-arg TAG_NAME=${TAG_NAME}
+        --build-arg SHORT_SHA=${SHORT_SHA}
+        -t gcr.io/${PROJECT_ID}/${_NAME}:${TAG_NAME} .
+
+images:
+  - "gcr.io/${PROJECT_ID}/${_NAME}:${TAG_NAME}"
+
+substitutions:
+  _NAME: machinist

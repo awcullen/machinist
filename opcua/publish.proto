@@ -1,0 +1,18 @@
+syntax = "proto3";
+package opcua;
+option go_package = ".;opcua";
+import "opcua/variant.proto";
+
+// MetricValue message
+message MetricValue {
+  string name = 1;
+  Variant value = 2;
+  uint32 statusCode = 3;
+  int64 timestamp = 4;
+}
+
+// PublishResponse message
+message PublishResponse {
+  int64 timestamp = 1;
+  repeated MetricValue metrics = 2;
+}

@@ -1,0 +1,14 @@
+---
+name: Line1
+description: Building1
+endpointURL: opc.tcp://127.0.0.1:55555
+securityPolicy: http://opcfoundation.org/UA/SecurityPolicy#None
+publishInterval: 5000.0
+samplingInterval: 1000.0
+queueSize: 16
+metrics:
+  - metricID: 1-1
+    nodeID: ns=2;s=Demo.Dynamic.Scalar.Float
+  - metricID: 1-2
+    nodeID: ns=2;s=Demo.Dynamic.Scalar.Double
+

@@ -1,0 +1,37 @@
+{
+  "name": "machinist",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "bootstrap-vue": "^2.3.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5",
+    "vue-skycons": "^1.0.5"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.1.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "Chrome >= 60",
+    "Safari >= 10.1",
+    "iOS >= 10.3",
+    "Firefox >= 54",
+    "Edge >= 15"
+  ]
+}
