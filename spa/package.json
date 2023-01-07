@@ -17,7 +17,7 @@
     "vue-skycons": "^1.0.5"
   },
   "devDependencies": {
-    "@vue/cli-service": "^4.1.2",
+    "@vue/cli-service": "^5.0.8",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
